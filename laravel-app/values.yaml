@@ -1,0 +1,21 @@
+# General configuration
+replicaCount: 1
+
+# Laravel configuration
+laravel:
+  image:
+    repository: multiple-app
+    tag: latest
+    pullPolicy: IfNotPresent
+
+# MySQL configuration
+mysql:
+  image:
+    repository: mysql
+    tag: 5.7
+    pullPolicy: IfNotPresent
+  database: db_laravel
+  rootPassword: 232425
+  service:
+    port: 3306
+  storage: emptyDir  # Change to PVC if persistent storage is required
