@@ -6,11 +6,11 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: app-1
+    namespace: argocd
   project: default
   source:
-    repoURL: "https://github.com/topahadzi/gitops-repo.git"
-    path: app
+    repoURL: https://github.com/hngkhermn/gitops-repo.git
+    path: laravel-app
     targetRevision: main
   syncPolicy:
     automated:
