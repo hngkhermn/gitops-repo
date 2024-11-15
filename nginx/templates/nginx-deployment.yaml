@@ -20,11 +20,11 @@ spec:
             - containerPort: {{ .Values.nginx.service.port }}
           env:
             - name: PHP_FPM_HOST
-              value: "{{ .Release.Name }}-laravel"  # Name of the Laravel service
+              value: "laravel"  # Name of the Laravel service
           volumeMounts:
             - name: nginx-config
               mountPath: /etc/nginx/conf.d
       volumes:
         - name: nginx-config
           configMap:
-            name: {{ .Release.Name }}-nginx-config
+            name: nginx-config
