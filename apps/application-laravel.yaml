@@ -6,10 +6,10 @@ metadata:
   annotations:
     argocd-image-updater.argoproj.io/image-list:
       ghcr=ghcr.io/hngkhermn/multiple-app:latest
-    argocd-image-updater.argoproj.io/write-back-method: git:secret:argocd/repo
+    argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/git-branch: main
     argocd-image-updater.argoproj.io/api.update-strategy: digest
-    argocd-image-updater.argoproj.io/api.pull-secret: pullsecret:argocd/github-pull
+    argocd-image-updater.argoproj.io/api.pull-secret: pullsecret:argocd/ghcr-secret
 spec:
   destination:
     server: https://kubernetes.default.svc
