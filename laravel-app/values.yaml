@@ -4,7 +4,7 @@ replicaCount: 1
 # Laravel configuration
 laravel:
   image:
-    repository: multiple-app
+    repository: ghcr.io/hngkhermn/multiple-app:latest
     tag: latest
     pullPolicy: IfNotPresent
 
