@@ -4,10 +4,10 @@ metadata:
   name: laravel-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: ghcr=ghcr.io/hngkhermn/multiple-app:latest
-    argocd-image-updater.argoproj.io/write-back-method: git
-    argocd-image-updater.argoproj.io/git-branch: main
-    argocd-image-updater.argoproj.io/ghcr.update-strategy: digest
+    argocd-image-updater.argoproj.io/image-list: ghcr.io/hngkhermn/multiple-app
+    argocd-image-updater.argoproj.io/ghcr.update-strategy: latest
+    #argocd-image-updater.argoproj.io/write-back-method: git
+    #argocd-image-updater.argoproj.io/git-branch: main
 spec:
   destination:
     server: https://kubernetes.default.svc
