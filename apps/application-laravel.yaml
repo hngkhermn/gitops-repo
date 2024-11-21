@@ -4,7 +4,7 @@ metadata:
   name: laravel-app
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: ghcr=ghcr.io/hngkhermn/multiple-app
+    argocd-image-updater.argoproj.io/image-list: ghcr=ghcr.io/hngkhermn/multiple-app:latest
     argocd-image-updater.argoproj.io/ghcr.update-strategy: digest
 spec:
   destination:
