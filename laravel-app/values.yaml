@@ -6,7 +6,7 @@ laravel:
   image:
     repository: ghcr.io/hngkhermn/multiple-app
     tag: latest
-    pullPolicy: IfNotPresent
+    pullPolicy: Always
 
 # MySQL configuration
 mysql:
