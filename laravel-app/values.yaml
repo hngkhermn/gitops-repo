@@ -5,7 +5,7 @@ replicaCount: 1
 laravel:
   image:
     repository: ghcr.io/hngkhermn/multiple-app
-    tag: latest
+    tag: {{ .Values.image.tag }}
     pullPolicy: Always
 
 # MySQL configuration
