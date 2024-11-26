@@ -4,5 +4,5 @@ helm:
     value: ghcr.io/hngkhermn/multiple-app
     forcestring: true
   - name: image.tag
-    value: latest@sha256:3d69cc8c912b0d760d7e981c820de2f8f6063c838d84548a31af73a2298a2724
+    value: latest@sha256:e688cd689fccee932a91e48f3d84b59578a7b0ffb17f4fe06265dfaa165ad6f2
     forcestring: true
